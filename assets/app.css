@@ -1,0 +1,6 @@
+@import "./fonts.css";
+@import "./reset.css";
+
+:root {
+    --font-base: "DM Sans", sans-serif;
+}
