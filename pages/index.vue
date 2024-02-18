@@ -1,5 +1,4 @@
 <template>
-    <div class="hero-section-overlay"></div>
     <main class="hero-section">
         <h1>Hi. I'm Piotr.<br>Frontend Developer</h1>
         <span class="hero-section-description">
@@ -20,8 +19,16 @@
     h1 {
         text-align: center;
         color: var(--color-lime-base);
-        font-size: 72px;
         font-weight: 700;
+        font-size: 60px;
+
+        @media (width > 1024px) {
+            font-size: 90px;
+        }
+
+        @media (width > 1024px) {
+            font-size: 120px;
+        }
     }
 }
 
@@ -31,30 +38,14 @@
     font-size: 16px;
     margin-top: 60px;
     text-align: center;
-}
+    max-width: 90vw;
 
-.hero-section-overlay {
-    height: 100dvh;
-    width: 100dvw;
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(-80deg, #346946, #417938, #5F7A57, #556A38, #395B58);
-    background-size: 400% 400%;
-    animation: gradient 25s ease infinite;
-    z-index: -1;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
+    @media (width > 1024px) {
+        font-size: 24px;
     }
 
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
+    @media (width > 1600px) {
+        font-size: 28px;
     }
 }
 </style>
