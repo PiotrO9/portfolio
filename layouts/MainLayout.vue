@@ -10,8 +10,8 @@ import AppHeader from "~/components/AppHeader.vue";
 
 <style scoped lang="scss">
 .hero-section-overlay {
-    height: 100dvh;
-    width: 100dvw;
+    height: 100%;
+    width: 100%;
     position: absolute;
     inset: 0;
     background: linear-gradient(-80deg, #346946, #417938, #5F7A57, #556A38, #395B58);
